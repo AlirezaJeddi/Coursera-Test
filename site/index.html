@@ -6,41 +6,62 @@
 	<title>Hello Coursera!</title>
 	<link rel="stylesheet" href="style.css">
 	<style type="text/css">
-	
-		a:link, a:visited{
-	 background-color: darkgray;
-	 text-align: center;
-	 border: 1px solid darkslategray;
-	 color: black;
-	 width: 200px;
-	 text-decoration: none;
-	 padding: 5px;
-     margin: 20px auto;
-     display: block;
+		*{
+			box-sizing: border-box;
+		}
+		.row{
+			width: 100%;
+		}
+		@media (min-width: 992px){.col-md-1, .col-md-2,.col-md-3
+			{   float: left;
+				border: 2px solid black;
+				width: 29%;
+			    margin:20px 20px 20px 20px;
+}
 
 		}
-	a:hover, a:active{
-	background-color: black;
-	color: white;
-	border: 1px solid ghostwhite;
-	}
-	
-	img{
-		position: relative;
-		left: 470px;
-	}
+		@media (min-width: 768px) and (max-width: 991px){
+			.col-sm-1 , .col-sm-2, .col-sm-3{ 
+				float:left;
+				border: 2px solid black;
+				margin:20px 20px 20px 20px;
+				padding: 10px;
+}
+			.col-sm-1 , .col-sm-2 { width:44.5% }
 
+			.col-sm-3{width: 94%}
+}
+		@media (max-width: 767px){
+			.col-xs-1 , .col-xs-2, .col-xs-3{float: left;
+				border: 2px solid black; width: 93%;
+				margin:20px 20px 20px 20px;
+
+			}
+
+}
+		
+
+
+		
 	</style>
 </head>
 <body>
-	<div>
-<a href="https://www.google.com" target="blank">Google</a></div>
-<div>
-<a href="https://www.google.com" target="blank">Alireza</a>
-</div>
+<h1>Football club</h1>
+<div class="row">
+<section class="col-md-1 col-sm-1 col-xs-1">
+	<a1>Real Madrid</a1>
+	<p>Real Madrid Club, commonly referred to as Real Madrid, is a Spanish professional football club based in Madrid. The club competes in La Liga, the top tier of Spanish football.</p>
+</section>
 
-<h1 style="text-align: center;">Sons Anarchy</h1>
-<img src="E:\Wallpapers\sons.jpg" 
-width="420" height="250">
+<section class="col-md-2 col-sm-2 col-xs-2">
+	<a2>Barcelona</a2>
+	<p>Futbol Club Barcelona, commonly known as Barcelona, is a professional football club based in Barcelona, Catalonia, Spain, that competes in La Liga, the top flight of Spanish football.</p>
+</section>
+
+<section class="col-md-3 col-sm-3 col-xs-3">
+	<a3>Bayern München</a3>
+	<p>Bayern München, also known as FC Bayern, is a German professional sports club based in Munich, Bavaria. Bayern is the most successful club in German football history.</p>
+</section>
+</div>
 </body>
 </html>

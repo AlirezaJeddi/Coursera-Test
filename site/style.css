@@ -1,4 +1,21 @@
 body{
-	background-color: gray;
+	background-color: white;
+.col-md-1 ,.col-sm-1 ,.col-xs-1 ,.col-md-2 ,.col-sm-2 ,.col-xs-2,
+	.col-md-3 ,.col-sm-3 ,.col-xs-3{
+		background-color: gray ;
+	}
+	a1 ,a2 , a3{
+			border: 2px solid black;
+			float: right;
+			padding: 5px 25px 5px 25px;
+			margin: -2px;
 
+		}
+	a1{background-color: mediumpurple;}
+	a2{background-color: indianred;}
+	a3{background-color: blue;}
+	p{margin-left: 7px;}
+	h1{
+text-align:center;
+margin-top:30px;	}
 }
